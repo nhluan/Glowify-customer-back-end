@@ -22,3 +22,11 @@ model Customer {
   status Boolean
 }
 
+model Product {
+  id          Int      @default(autoincrement()) @id
+  name        String
+  description String?
+  price       Float
+  createdAt   DateTime @default(now())
+}
+

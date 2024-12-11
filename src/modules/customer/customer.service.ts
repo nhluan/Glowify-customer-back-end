@@ -6,9 +6,9 @@ import { Customer, Prisma } from '@prisma/client';
 export class CustomerService {
   constructor(private prisma: PrismaService) {}
 
-  findCustomer(id: string) {
+  findCustomer(id: string): Customer {
     return {
-      id: 'test',
+      id: 1,
       lastName: 'Nguyen',
       firstName: 'Luan',
       email: 'nhluan.official@gmail.com',
